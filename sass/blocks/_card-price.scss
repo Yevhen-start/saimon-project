@@ -1,0 +1,19 @@
+.card-price {
+    max-width: 253px;
+    border: 2px solid $grey-color-opacity;
+    padding: 35px 27px; 
+
+    &__item:not(:last-child) {  
+        margin-bottom: 30px;
+    }
+    &__item-price {
+        color: $accent-color;
+        font-size: 28px;
+        font-weight: $fw-bold;
+
+        span {
+            font-size: 18px;
+            font-weight: $fw-regular;   
+        }
+    }
+}

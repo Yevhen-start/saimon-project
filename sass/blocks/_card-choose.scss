@@ -1,0 +1,61 @@
+.card-choose {
+    width: 253px;
+    max-width: 100%;
+    min-height: 375px;
+    padding: 45px 27px 45px; 
+    background: $white-color-opacity;
+    border: 2px solid $accent-color;
+
+    &__form {
+
+        select {
+            margin-bottom: 37px;
+            height: 40px;
+            width: 100%;
+            border-radius: 3px;
+            font-size: 13px;
+            padding: 12px;
+            // appearance: none;
+            // position: relative;    
+
+            // &::after {
+            //     content: '';
+            //     position: absolute;
+            //     width: 14px;
+            //     height: 7px;
+            //     background-color: red;
+            //     background-image: url('./../img/icon/select.svg');
+            //     background-repeat: no-repeat;
+            //     top: 0;
+            //     right: 0;
+            // }
+            &:focus {
+                background-color: $accent-color;
+                color: $white-color;
+            }
+        }
+        textarea {
+            height: 106px;
+            width: 100%;
+            padding: 16px;
+            overflow: hidden;
+            resize: none;
+            font-family: $ff-inter;
+            color: $accent-color;
+            font-size: 13px;
+
+            &::placeholder {
+                font-size: 12px;
+            }
+        }
+    }
+    &__form-title {
+        font-size: 13px;
+        color: $black-color;
+        margin-bottom: 10px;
+    }
+    &--position {
+        margin-left: 34px;
+        margin-top: 134px;
+    }
+}

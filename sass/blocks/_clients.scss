@@ -1,0 +1,32 @@
+.clients {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    text-align: center;
+
+    &__header {
+        margin-bottom: 85px;
+    }
+    &__rating {
+        display: inline-block;
+    }
+    &__rating-text {
+        margin-left: 16px;
+        margin-bottom: 35px;
+        color: $accent-color;
+        display: inline-block;
+        span {
+            font-size: 28px;
+            font-weight: $fw-bold;
+        }
+    }
+    &__title {
+        margin-bottom: 19px;
+    }
+    &__text {
+        max-width: 540px;
+        margin: $mc;
+    }
+    &__items {
+        @include flex(space-between, center);
+    }
+}

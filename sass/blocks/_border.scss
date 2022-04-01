@@ -1,0 +1,14 @@
+.border {
+    width: 180px;
+    height: 5px;
+    background-color: $grey-color-opacity;
+    position: relative;
+
+    &::before {
+        content: '';
+        height: 100%;
+        width: 30%;
+        background-color: $accent-color;
+        position: absolute;
+    }
+}

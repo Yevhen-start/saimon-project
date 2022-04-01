@@ -1,0 +1,28 @@
+.header {
+    padding-top: 23px;
+    padding-bottom: 23px;
+
+    &__container,
+    &__navigation-body {
+        @include flex(space-between, center);
+    }
+    &__navigation {
+        margin-left: auto;
+        margin-right: 45px;
+    }
+    &__navigation-list {
+    
+        &:not(:last-child) {
+            margin-right: 35px;
+        }
+    }
+    &__navigation-link {
+        transition: color $transition, border-bottom $transition;
+
+        &.active,   
+        &:hover {
+            color: darken($color: $accent-color, $amount: 20%);
+            border-bottom: 1px solid darken($color: $accent-color, $amount: 20%);
+        }
+    }
+}

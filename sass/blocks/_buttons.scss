@@ -1,0 +1,33 @@
+.small-button {
+    width: 135px;
+    height: 35px;
+    padding: 9px 11px;
+    background-color: $black-color;
+    color: $white-color;
+    line-height: 15px; 
+    transition: background-color $transition, color $transition, border $transition;
+    
+    &:hover {
+        background-color: $white-color;
+        color: $black-color;
+        border: 1px solid $black-color;
+    }
+}
+.button {
+    width: 208px;
+    height: 45px;
+    padding: 12px 26px;
+    border: 1px solid $black-color;
+    font-size: 18px;
+    font-weight: $fw-bold;
+    color: $black-color;
+    cursor: pointer;
+    transition: background-color $transition, color $transition, border $transition;
+
+    &:hover,
+    &.active {
+        background-color: $accent-color;
+        color: $white-color;
+        border: none;
+    }
+}

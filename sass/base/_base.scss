@@ -1,0 +1,24 @@
+body {
+    font-family: $ff-inter;
+    color: $grey-color; 
+    font-size: 15px;
+    font-weight: $fw-regular;  
+    line-height: 1.2;    
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main {
+    flex: 1 1 auto;
+}
+[class*='__container'] {
+    max-width: 1070px;
+    padding: 0 15px;   
+    margin: $mc; 
+}
+
+.none {
+    display: none;
+}

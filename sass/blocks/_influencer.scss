@@ -1,0 +1,54 @@
+.influencer {
+    padding-top: 170px;
+    padding-bottom: 93px;
+    background: url('./../img/influencer/left-women.png') 10% 95px no-repeat, 
+        url('./../img/influencer/right-women.png') 90% bottom no-repeat;
+
+    &__row {
+        max-width: 540px;
+        margin: $mc;
+        text-align: center;
+    }
+    &__title {
+        font-weight: $fw-black;
+        font-size: 60px;
+        color: $black-color;
+        line-height: 1;
+        margin-bottom: 32px;
+        position: relative;
+        
+        span {
+            color: $accent-color;
+        }
+
+        &::after {
+            content: '';
+            width: 116px;
+            height: 20px;
+            position: absolute;
+            background-image: url('./../img/influencer/star.svg');
+            top: -22px;
+            right: 110px;
+            background-repeat: no-repeat;
+        }
+        &::before {
+            content: '';
+            width: 80px;
+            height: 46px;
+            position: absolute;
+            background-image: url('./../img/influencer/like.svg');
+            top: -31px;
+            right: 12px;
+            background-repeat: no-repeat;
+        }
+    }
+    &__text {
+        margin-bottom: 30px;
+    }
+    &__buttons {
+        @include flex(space-between, center);
+        max-width: 440px;
+        margin: $mc;
+        color: $black-color;
+    }
+}

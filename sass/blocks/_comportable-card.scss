@@ -1,0 +1,55 @@
+.comportable-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 276px;
+    background-color: $white-color;
+    padding: 47px 22px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: $black-color;
+
+    &:not(:last-child) {
+        margin-right: 45px;
+    }
+    &__img-top {
+        width: 42px;
+        margin-bottom: 27px;
+        path{
+            stroke: $black-color;
+        }
+    }
+    &__img-bottom {
+        width: 42px;
+        fill: $black-color;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: $fw-bold;
+        margin-bottom: 21px;
+    }
+    &__text {
+        color: $grey-color;
+        margin-bottom: 27px;
+    }
+
+    &:hover,
+    &.active {
+        background-color: $accent-color;  
+        color: $white-color;
+        border: 1px solid $white-color;
+        & .comportable-card__text {
+            color: $white-color;   
+        }
+        & .comportable-card__img-top {
+            path {
+                stroke: $white-color;
+            }    
+        }
+        & .comportable-card__img-bottom {
+            fill: $white-color;  
+        }
+    } 
+}
+
+

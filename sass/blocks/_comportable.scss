@@ -1,0 +1,19 @@
+.comportable {
+    background-color: $accent-color;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: $white-color;
+
+    &__container {
+        @include flex (space-between, center);
+    }
+    &__info {
+        max-width: 400px;
+    }
+    &__title {
+        margin-bottom: 17px;
+    }
+    &__cards {
+        @include flex (space-between, center);    
+    }
+}
