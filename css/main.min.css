@@ -694,3 +694,66 @@ body {
   background: -webkit-gradient(linear, right top, left top, color-stop(1.46%, #FFFFFF), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(270deg, #FFFFFF 1.46%, rgba(255, 255, 255, 0) 100%);
 }
+
+.using {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url("./../img/using/megaphone.png") left bottom no-repeat, #6F764D;
+}
+
+.using__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.using__row {
+  max-width: 606px;
+}
+
+.using__title {
+  margin-bottom: 120px;
+  text-align: center;
+  margin-top: 77px;
+}
+
+.using__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.using__item {
+  max-width: 100px;
+  text-align: center;
+}
+
+.using__item-img {
+  margin-bottom: 11px;
+}
+
+.using__item-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.using__item:not(:last-child) {
+  margin-right: 153px;
+}

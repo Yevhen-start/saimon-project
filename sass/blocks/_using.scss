@@ -1,0 +1,36 @@
+.using {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: url('./../img/using/megaphone.png') left bottom no-repeat, $accent-color;
+
+    &__container {
+        @include flex(flex-end, center);
+    }
+    &__row {
+        max-width: 606px;
+    }
+    &__title {
+        margin-bottom: 120px;
+        text-align: center;
+        margin-top: 77px;
+    }
+    &__items {
+        @include flex(space-between, center);
+    }
+    &__item {
+        max-width: 100px;
+        text-align: center;
+
+        &-img {
+            margin-bottom: 11px;
+        }
+        &-title {
+            color: $white-color;
+            font-size: 18px;
+            font-weight: $fw-bold;
+        }
+    }
+    &__item:not(:last-child) {
+        margin-right: 153px;
+    }
+}
